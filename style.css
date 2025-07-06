@@ -110,15 +110,6 @@ h2, h3 {
 }
 
 /* Table */
-table {
-  background-color: #ac9681;
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
 table, th, td {
   border: 3px solid #c0a98d;
 }
@@ -126,19 +117,6 @@ table, th, td {
 th, td {
   padding: 12px;
   text-align: left;
-}
-
-th {
-  background-color: #e2c8a5;
-  color: #3a2f23;
-}
-
-/* Image Gallery */
-.gallery-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
 }
 
 /* Responsive Boxes (3 per row) */
@@ -170,25 +148,18 @@ th {
   color: white;
 }
 
+.btn-brown {
+      background-color: #8B4513;
+      color: white;
+    }
+    .btn-brown:hover {
+      background-color: #A0522D;
+    }
+
 /* Audio Player */
 audio {
   margin-top: 10px;
   width: 100%;
-}
-
-/* Form Fields */
-input[type="text"], textarea, select {
-  border: 1px solid #c4b49b;
-  border-radius: 6px;
-  padding: 8px;
-  width: 100%;
-  margin-top: 10px;
-}
-
-/* Utility */
-.text-batik {
-  font-family: 'Quicksand', sans-serif;
-  color: #6f4e37;
 }
 
 /* Buttons & Links */
@@ -209,21 +180,12 @@ a.btn, button.btn {
   text-align: center;
 }
 
-.carousel-item {
-    height: 500px; /* tinggi maksimal satu slide carousel */
-}
-
 .carousel-item img {
     height: 100%;
     width: 100%;
     object-fit: contain;
     padding: 20px;}
-
-  .carousel-item .w-50.p-5 {
-  background-color: #c4b49b;
-  border-radius: 16px;
-}
-
+  
 /* === Flora Fauna Card Styling === */
 
 .flora-fauna-card {
