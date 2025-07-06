@@ -1,6 +1,3 @@
-/* Warisan Nusantara - CSS Global Responsive & Aesthetic */
-
-/* Reset & Base */
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: #FFF8F0;
@@ -16,7 +13,6 @@ main {
   flex: 1;
 }
 
-/* Navbar */
 .navbar {
   background-color: #d2b48c !important;
 }
@@ -70,8 +66,6 @@ main {
   text-shadow: 1px 1px 1px #d2b48c;
 }
 
-
-/* Footer */
 footer {
   width: 100%;
   background-color: #DEB887;
@@ -80,12 +74,10 @@ footer {
   margin-top: auto;
 }
 
-
 footer strong {
   font-weight: 600;
 }
 
-/* Section Headings */
 h2, h3 {
   font-family: 'Quicksand', sans-serif;
   color: #4E3B2C;
@@ -93,8 +85,6 @@ h2, h3 {
   margin-bottom: 1rem;
 }
 
-
-/* Card / Box Styles */
 .custom-box {
   background-color: #f8f1e8;
   border: 1px solid #352926;
@@ -109,7 +99,6 @@ h2, h3 {
   transform: translateY(-4px);
 }
 
-/* Table */
 table, th, td {
   border: 3px solid #c0a98d;
 }
@@ -119,24 +108,6 @@ th, td {
   text-align: left;
 }
 
-/* Responsive Boxes (3 per row) */
-@media (min-width: 768px) {
-  .box-grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .box-grid-3 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-  }
-}
-
-/* Quiz Buttons */
 .btn-outline-dark {
   border-color: #5c4b3b;
   color: #5c4b3b;
@@ -149,25 +120,25 @@ th, td {
 }
 
 .btn-brown {
-      background-color: #8B4513;
+      background-color: #4d3422;
       color: white;
     }
     .btn-brown:hover {
-      background-color: #A0522D;
+      background-color: #4d3422;
     }
 
-/* Audio Player */
+
 audio {
   margin-top: 10px;
   width: 100%;
 }
 
-/* Buttons & Links */
+
 a.btn, button.btn {
   border-radius: 8px;
 }
 
-/* Spacing Utilities */
+
 .mb-4 {
   margin-bottom: 1.5rem;
 }
@@ -184,9 +155,10 @@ a.btn, button.btn {
     height: 100%;
     width: 100%;
     object-fit: contain;
-    padding: 20px;}
+    padding: 20px;
+  }
   
-/* === Flora Fauna Card Styling === */
+
 
 .flora-fauna-card {
   background-color: #f8f1e8;
@@ -216,7 +188,6 @@ a.btn, button.btn {
   border-top-right-radius: 10px;
 }
 
-
 .btn-detail {
   background-color: #6c9a8b;
   color: white;
@@ -230,4 +201,20 @@ a.btn, button.btn {
 .btn-detail:hover {
   background-color: #58806f;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .box-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .box-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
 }
