@@ -1,493 +1,534 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
-  <title>Rumah Adat - Warisan Nusantara</title>
+  <title>Flora & Fauna - Warisan Nusantara</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="d-flex flex column min-vh-100">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg" style="background-color: #DEB887;">
-  <div class="container">
-    <a class="navbar-brand text-dark" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand d-flex align-items-center gap-2 logo-brand" href="#">
-  <img src="asset/logo.png" alt="Logo" height="40">
-  <span>Warisan Nusantara</span>
-</a>
-    </button>
-    <div class="collapse navbar-collapse" id="navCollapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="makanan.html">Makanan</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="pakaian.html">Pakaian & Tarian</a></li>
-        <li class="nav-item"><a class="nav-link text-dark active" href="#">Flora & Fauna</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="game.html">Game</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<main class="flex-grow-1">
-<div class="container py-5">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-center mb-4">Flora & Fauna Nusantara</h1>
-        <p class="text-center">🌿🐾 Selamat datang di dunia flora dan fauna Indonesia yang kaya! Dari hutan tropis Sumatera hingga padang savana Nusa Tenggara, Indonesia adalah rumah bagi ribuan spesies tumbuhan dan hewan yang unik dan menakjubkan.
-          Di halaman ini, kamu akan menemukan berbagai flora seperti Rafflesia Arnoldii yang langka, Anggrek Bulan yang memesona, hingga Edelweiss Jawa yang abadi. Tak ketinggalan fauna ikonik seperti Komodo, Harimau Sumatera, dan Cendrawasih.
-          Mari kita eksplorasi keindahan alam Indonesia yang tak tertandingi! 🌺🦜</p>
-      </div>
-  <div class="row g-4">
-          <!-- Flora 1: Rafflesia Arnoldii -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/rafflesia arnoldii.jpeg" class="flora-fauna-img" alt="Rafflesia Arnoldii">
-            <div class="card-body text-center">
-              <h5 class="card-title">Rafflesia Arnoldii</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalRafflesia">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flora 2: Anggrek Bulan -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/anggrek bulan.jpg" class="flora-fauna-img" alt="Anggrek Bulan">
-            <div class="card-body text-center">
-              <h5 class="card-title">Anggrek Bulan</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAnggrek">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flora 3: Bunga Bangkai -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/bunga bangkai.jpg" class="flora-fauna-img" alt="Bunga Bangkai">
-            <div class="card-body text-center">
-              <h5 class="card-title">Bunga Bangkai</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalBangkai">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flora 4: Edelweiss Jawa -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Edelweiss Jawa.jpg" class="flora-fauna-img" alt="Edelweiss Jawa">
-            <div class="card-body text-center">
-              <h5 class="card-title">Edelweiss Jawa</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalEdelweiss">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flora 5: Pohon Cendana -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Pohon Cendana.jpg" class="flora-fauna-img" alt="Pohon Cendana">
-            <div class="card-body text-center">
-              <h5 class="card-title">Pohon Cendana</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalCendana">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flora 6: Lontar -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Pohon Lontar.jpg" class="flora-fauna-img" alt="Pohon Lontar">
-            <div class="card-body text-center">
-              <h5 class="card-title">Pohon Lontar</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalLontar">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flora 7: Salak Pondoh -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Salak Pondoh.jpg" class="flora-fauna-img" alt="Salak Pondoh">
-            <div class="card-body text-center">
-              <h5 class="card-title">Salak Pondoh</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalSalak">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flora 8: Padi -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Padi.jpg" class="flora-fauna-img" alt="Padi">
-            <div class="card-body text-center">
-              <h5 class="card-title">Padi</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalPadi">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flora 9: Daun Sirih -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/daun sirih.jpg" class="flora-fauna-img" alt="Daun Sirih">
-            <div class="card-body text-center">
-              <h5 class="card-title">Daun Sirih</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalSirih">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-        
-        <h2 class="text-center mt-5 mb-4">Fauna Nusantara</h2>
-        <!-- Fauna 1: Komodo -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/komodo.jpg" class="flora-fauna-img" alt="Komodo">
-            <div class="card-body text-center">
-              <h5 class="card-title">Komodo</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalKomodo">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fauna 2: Harimau Sumatera -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Harimau Sumatera.jpg" class="flora-fauna-img" alt="Harimau Sumatera">
-            <div class="card-body text-center">
-              <h5 class="card-title">Harimau Sumatera</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalHarimau">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fauna 3: Cendrawasih -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Burung Cendrawasih.jpg" class="flora-fauna-img" alt="Cendrawasih">
-            <div class="card-body text-center">
-              <h5 class="card-title">Burung Cendrawasih</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalCendrawasih">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fauna 4: Anoa -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Anoa.jpg" class="flora-fauna-img" alt="Anoa">
-            <div class="card-body text-center">
-              <h5 class="card-title">Anoa</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAnoa">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fauna 5: Jalak Bali -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Jalak Bali.jpg" class="flora-fauna-img" alt="Jalak Bali">
-            <div class="card-body text-center">
-              <h5 class="card-title">Jalak Bali</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalJalak">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fauna 6: Orangutan Kalimantan -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Orangutan Kalimantan.jpg" class="flora-fauna-img" alt="Orangutan">
-            <div class="card-body text-center">
-              <h5 class="card-title">Orangutan Kalimantan</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalOrangutan">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fauna 7: Kakatua Raja -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Kakatua Raja.jpg" class="flora-fauna-img" alt="Kakatua Raja">
-            <div class="card-body text-center">
-              <h5 class="card-title">Kakatua Raja</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalKakatua">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fauna 8: Bekantan -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/Bekantan.jpg" class="flora-fauna-img" alt="Bekantan">
-            <div class="card-body text-center">
-              <h5 class="card-title">Bekantan</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalBekantan">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Fauna 9: Elang Jawa -->
-        <div class="col-md-4 mb-4">
-          <div class="card flora-fauna-card h-100">
-            <img src="asset/flora fauna/elang jawa.jpg" class="flora-fauna-img" alt="Elang Jawa">
-            <div class="card-body text-center">
-              <h5 class="card-title">Elang Jawa</h5>
-              <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalElang">Lihat Deskripsi</button>
-            </div>
-          </div>
-        </div>
+<body>
+  <nav class="navbar navbar-expand-lg" style="background-color: #DEB887;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 logo-brand" href="#">
+        <img src="asset/logo.png" alt="Logo" height="40">
+        <span>Warisan Nusantara</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="makanan.html">Makanan</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="pakaian.html">Pakaian & Tarian</a></li>
+          <li class="nav-item"><a class="nav-link text-dark active" href="#">Flora & Fauna</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="game.html">Game</a></li>
+        </ul>
       </div>
     </div>
-
-  <!-- MODAL -->
-  <!-- FLORA 1: Rafflesia Arnoldii -->
-  <div class="modal fade" id="modalRafflesia" tabindex="-1" aria-labelledby="modalRafflesiaLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalRafflesiaLabel">Rafflesia Arnoldii</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Bengkulu</p>
-        <p><strong>Deskripsi:</strong> Bunga terbesar di dunia yang mekar hanya beberapa hari dan tidak memiliki batang, daun, atau akar sejati. Mengeluarkan bau menyengat seperti bangkai.</p>
-        <p><strong>Fun Fact:</strong> Rafflesia termasuk tanaman parasit dan tidak melakukan fotosintesis!</p>
+  </nav>
+  <main class="flex-grow-1">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center mb-4">Flora & Fauna Nusantara</h1>
+          <p class="text-center">🌿🐾 Selamat datang di dunia flora dan fauna Indonesia yang kaya! Dari hutan tropis
+            Sumatera hingga padang savana Nusa Tenggara, Indonesia adalah rumah bagi ribuan spesies tumbuhan dan hewan
+            yang unik dan menakjubkan.
+            Di halaman ini, kamu akan menemukan berbagai flora seperti Rafflesia Arnoldii yang langka, Anggrek Bulan
+            yang memesona, hingga Edelweiss Jawa yang abadi. Tak ketinggalan fauna ikonik seperti Komodo, Harimau
+            Sumatera, dan Cendrawasih.
+            Mari kita eksplorasi keindahan alam Indonesia yang tak tertandingi! 🌺🦜</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/rafflesia arnoldii.jpeg" class="flora-fauna-img" alt="Rafflesia Arnoldii">
+              <div class="card-body text-center">
+                <h5 class="card-title">Rafflesia Arnoldii</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalRafflesia">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/anggrek bulan.jpg" class="flora-fauna-img" alt="Anggrek Bulan">
+              <div class="card-body text-center">
+                <h5 class="card-title">Anggrek Bulan</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAnggrek">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/bunga bangkai.jpg" class="flora-fauna-img" alt="Bunga Bangkai">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bunga Bangkai</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalBangkai">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/edelweiss jawa.jpg" class="flora-fauna-img" alt="Edelweiss Jawa">
+              <div class="card-body text-center">
+                <h5 class="card-title">Edelweiss Jawa</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalEdelweiss">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/pohon cendana.jpg" class="flora-fauna-img" alt="Pohon Cendana">
+              <div class="card-body text-center">
+                <h5 class="card-title">Pohon Cendana</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalCendana">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/Pohon Lontar.jpg" class="flora-fauna-img" alt="Pohon Lontar">
+              <div class="card-body text-center">
+                <h5 class="card-title">Pohon Lontar</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalLontar">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/salak pondoh.jpg" class="flora-fauna-img" alt="Salak Pondoh">
+              <div class="card-body text-center">
+                <h5 class="card-title">Salak Pondoh</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalSalak">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/padi.jpg" class="flora-fauna-img" alt="Padi">
+              <div class="card-body text-center">
+                <h5 class="card-title">Padi</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalPadi">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/daun sirih.jpg" class="flora-fauna-img" alt="Daun Sirih">
+              <div class="card-body text-center">
+                <h5 class="card-title">Daun Sirih</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalSirih">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-center mt-5 mb-4">Fauna Nusantara</h2>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/komodo.jpg" class="flora-fauna-img" alt="Komodo">
+              <div class="card-body text-center">
+                <h5 class="card-title">Komodo</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalKomodo">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/harimau sumatera.jpg" class="flora-fauna-img" alt="Harimau Sumatera">
+              <div class="card-body text-center">
+                <h5 class="card-title">Harimau Sumatera</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalHarimau">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/Burung Cendrawasih.jpg" class="flora-fauna-img" alt="Cendrawasih">
+              <div class="card-body text-center">
+                <h5 class="card-title">Burung Cendrawasih</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalCendrawasih">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/anoa.jpg" class="flora-fauna-img" alt="Anoa">
+              <div class="card-body text-center">
+                <h5 class="card-title">Anoa</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAnoa">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/jalak bali.jpg" class="flora-fauna-img" alt="Jalak Bali">
+              <div class="card-body text-center">
+                <h5 class="card-title">Jalak Bali</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalJalak">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/orangutan kalimantan.jpg" class="flora-fauna-img" alt="Orangutan">
+              <div class="card-body text-center">
+                <h5 class="card-title">Orangutan Kalimantan</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalOrangutan">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/kakatua raja.jpg" class="flora-fauna-img" alt="Kakatua Raja">
+              <div class="card-body text-center">
+                <h5 class="card-title">Kakatua Raja</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalKakatua">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/bekantan.jpg" class="flora-fauna-img" alt="Bekantan">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bekantan</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalBekantan">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card flora-fauna-card h-100">
+              <img src="asset/flora fauna/elang jawa.jpg" class="flora-fauna-img" alt="Elang Jawa">
+              <div class="card-body text-center">
+                <h5 class="card-title">Elang Jawa</h5>
+                <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalElang">Lihat
+                  Deskripsi</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FLORA 2: Anggrek Bulan -->
-  <div class="modal fade" id="modalAnggrek" tabindex="-1" aria-labelledby="modalAnggrekLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalAnggrekLabel">Anggrek Bulan</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Jawa, Papua</p>
-        <p><strong>Deskripsi:</strong> Bunga nasional Indonesia yang memiliki kelopak putih dan tengah kekuningan. Melambangkan keanggunan dan kesucian.</p>
-        <p><strong>Fun Fact:</strong> Sering dijadikan simbol pada Hari Kartini karena keindahannya.</p>
+      <div class="modal fade" id="modalRafflesia" tabindex="-1" aria-labelledby="modalRafflesiaLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalRafflesiaLabel">Rafflesia Arnoldii</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Bengkulu</p>
+              <p><strong>Deskripsi:</strong> Bunga terbesar di dunia yang mekar hanya beberapa hari dan tidak memiliki
+                batang, daun, atau akar sejati. Mengeluarkan bau menyengat seperti bangkai.</p>
+              <p><strong>Fun Fact:</strong> Rafflesia termasuk tanaman parasit dan tidak melakukan fotosintesis!</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FLORA 3: Bunga Bangkai -->
-  <div class="modal fade" id="modalBangkai" tabindex="-1" aria-labelledby="modalBangkaiLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalBangkaiLabel">Bunga Bangkai</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Sumatera Barat</p>
-        <p><strong>Deskripsi:</strong> Tumbuhan raksasa berbau busuk ini dikenal sebagai Amorphophallus titanum. Beda dengan Rafflesia, ia punya batang dan daun besar.</p>
-        <p><strong>Fun Fact:</strong> Bunganya bisa mencapai tinggi 3 meter dan berat hingga 75 kg!</p>
+      <div class="modal fade" id="modalAnggrek" tabindex="-1" aria-labelledby="modalAnggrekLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalAnggrekLabel">Anggrek Bulan</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Jawa, Papua</p>
+              <p><strong>Deskripsi:</strong> Bunga nasional Indonesia yang memiliki kelopak putih dan tengah kekuningan.
+                Melambangkan keanggunan dan kesucian.</p>
+              <p><strong>Fun Fact:</strong> Sering dijadikan simbol pada Hari Kartini karena keindahannya.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FLORA 4: Edelweiss Jawa -->
-  <div class="modal fade" id="modalEdelweiss" tabindex="-1" aria-labelledby="modalEdelweissLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalEdelweissLabel">Edelweiss Jawa</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Pegunungan Jawa</p>
-        <p><strong>Deskripsi:</strong> Dikenal sebagai bunga abadi yang tumbuh di dataran tinggi seperti Bromo dan Semeru. Dijaga ketat karena dilindungi.</p>
-        <p><strong>Fun Fact:</strong> Bisa tetap segar bertahun-tahun setelah dipetik.</p>
+      <div class="modal fade" id="modalBangkai" tabindex="-1" aria-labelledby="modalBangkaiLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalBangkaiLabel">Bunga Bangkai</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Sumatera Barat</p>
+              <p><strong>Deskripsi:</strong> Tumbuhan raksasa berbau busuk ini dikenal sebagai Amorphophallus titanum.
+                Beda dengan Rafflesia, ia punya batang dan daun besar.</p>
+              <p><strong>Fun Fact:</strong> Bunganya bisa mencapai tinggi 3 meter dan berat hingga 75 kg!</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FLORA 5: Pohon Cendana -->
-  <div class="modal fade" id="modalCendana" tabindex="-1" aria-labelledby="modalCendanaLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalCendanaLabel">Pohon Cendana</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Nusa Tenggara Timur</p>
-        <p><strong>Deskripsi:</strong> Pohon penghasil kayu aromatik yang digunakan dalam parfum dan ritual tradisional.</p>
-        <p><strong>Fun Fact:</strong> Kayu cendana sangat mahal, sering disebut "emas hijau".</p>
+      <div class="modal fade" id="modalEdelweiss" tabindex="-1" aria-labelledby="modalEdelweissLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalEdelweissLabel">Edelweiss Jawa</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Pegunungan Jawa</p>
+              <p><strong>Deskripsi:</strong> Dikenal sebagai bunga abadi yang tumbuh di dataran tinggi seperti Bromo dan
+                Semeru. Dijaga ketat karena dilindungi.</p>
+              <p><strong>Fun Fact:</strong> Bisa tetap segar bertahun-tahun setelah dipetik.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FLORA 6: Pohon Lontar -->
-  <div class="modal fade" id="modalLontar" tabindex="-1" aria-labelledby="modalLontarLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalLontarLabel">Pohon Lontar</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Nusa Tenggara Timur</p>
-        <p><strong>Deskripsi:</strong> Pohon tinggi penghasil nira yang bisa dijadikan gula dan minuman. Daunnya sering digunakan sebagai bahan kerajinan dan media menulis naskah kuno.</p>
-        <p><strong>Fun Fact:</strong> Dalam budaya Timor, pohon lontar disebut sebagai "pohon kehidupan".</p>
+      <div class="modal fade" id="modalCendana" tabindex="-1" aria-labelledby="modalCendanaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalCendanaLabel">Pohon Cendana</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Nusa Tenggara Timur</p>
+              <p><strong>Deskripsi:</strong> Pohon penghasil kayu aromatik yang digunakan dalam parfum dan ritual
+                tradisional.</p>
+              <p><strong>Fun Fact:</strong> Kayu cendana sangat mahal, sering disebut "emas hijau".</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FLORA 7: Salak Pondoh -->
-  <div class="modal fade" id="modalSalak" tabindex="-1" aria-labelledby="modalSalakLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalSalakLabel">Salak Pondoh</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Sleman, Yogyakarta</p>
-        <p><strong>Deskripsi:</strong> Buah bersisik yang manis, tidak sepat, dan bertekstur renyah. Sangat populer sebagai oleh-oleh khas Jogja.</p>
-        <p><strong>Fun Fact:</strong> Nama “Pondoh” berasal dari daerah Pondoh di Sleman tempat pertama kali dibudidayakan.</p>
+      <div class="modal fade" id="modalLontar" tabindex="-1" aria-labelledby="modalLontarLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalLontarLabel">Pohon Lontar</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Nusa Tenggara Timur</p>
+              <p><strong>Deskripsi:</strong> Pohon tinggi penghasil nira yang bisa dijadikan gula dan minuman. Daunnya
+                sering digunakan sebagai bahan kerajinan dan media menulis naskah kuno.</p>
+              <p><strong>Fun Fact:</strong> Dalam budaya Timor, pohon lontar disebut sebagai "pohon kehidupan".</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FLORA 8: Padi -->
-  <div class="modal fade" id="modalPadi" tabindex="-1" aria-labelledby="modalPadiLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalPadiLabel">Padi</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Seluruh Indonesia</p>
-        <p><strong>Deskripsi:</strong> Tanaman pangan utama masyarakat Indonesia yang menghasilkan beras. Menjadi simbol kemakmuran dan sumber kehidupan.</p>
-        <p><strong>Fun Fact:</strong> Lambang padi dan kapas terdapat pada lambang negara sebagai simbol pangan dan sandang.</p>
+      <div class="modal fade" id="modalSalak" tabindex="-1" aria-labelledby="modalSalakLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalSalakLabel">Salak Pondoh</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Sleman, Yogyakarta</p>
+              <p><strong>Deskripsi:</strong> Buah bersisik yang manis, tidak sepat, dan bertekstur renyah. Sangat
+                populer sebagai oleh-oleh khas Jogja.</p>
+              <p><strong>Fun Fact:</strong> Nama “Pondoh” berasal dari daerah Pondoh di Sleman tempat pertama kali
+                dibudidayakan.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FLORA 9: Daun Sirih -->
-  <div class="modal fade" id="modalSirih" tabindex="-1" aria-labelledby="modalSirihLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalSirihLabel">Daun Sirih</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Seluruh Nusantara</p>
-        <p><strong>Deskripsi:</strong> Tanaman rambat dengan daun hijau beraroma khas yang sering digunakan dalam ramuan tradisional dan upacara adat.</p>
-        <p><strong>Fun Fact:</strong> Dalam tradisi Betawi, “sirih lengkap” menjadi simbol kesopanan dalam lamaran!</p>
+      <div class="modal fade" id="modalPadi" tabindex="-1" aria-labelledby="modalPadiLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalPadiLabel">Padi</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Seluruh Indonesia</p>
+              <p><strong>Deskripsi:</strong> Tanaman pangan utama masyarakat Indonesia yang menghasilkan beras. Menjadi
+                simbol kemakmuran dan sumber kehidupan.</p>
+              <p><strong>Fun Fact:</strong> Lambang padi dan kapas terdapat pada lambang negara sebagai simbol pangan
+                dan sandang.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FAUNA 1: Komodo -->
-  <div class="modal fade" id="modalKomodo" tabindex="-1" aria-labelledby="modalKomodoLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalKomodoLabel">Komodo</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Pulau Komodo, Nusa Tenggara Timur</p>
-        <p><strong>Deskripsi:</strong> Reptil terbesar di dunia, dikenal sebagai kadal purba. Bisa tumbuh hingga 3 meter dan memiliki gigitan beracun.</p>
-        <p><strong>Fun Fact:</strong> Komodo adalah satu-satunya spesies kadal besar yang masih hidup dari zaman dinosaurus!</p>
+      <div class="modal fade" id="modalSirih" tabindex="-1" aria-labelledby="modalSirihLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalSirihLabel">Daun Sirih</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Seluruh Nusantara</p>
+              <p><strong>Deskripsi:</strong> Tanaman rambat dengan daun hijau beraroma khas yang sering digunakan dalam
+                ramuan tradisional dan upacara adat.</p>
+              <p><strong>Fun Fact:</strong> Dalam tradisi Betawi, “sirih lengkap” menjadi simbol kesopanan dalam
+                lamaran!</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FAUNA 2: Harimau Sumatera -->
-  <div class="modal fade" id="modalHarimau" tabindex="-1" aria-labelledby="modalHarimauLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalHarimauLabel">Harimau Sumatera</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Sumatera</p>
-        <p><strong>Deskripsi:</strong> Subspesies harimau terakhir di Indonesia. Tubuhnya lebih kecil dan berloreng lebat dibandingkan harimau lain.</p>
-        <p><strong>Fun Fact:</strong> Kini hanya tersisa kurang dari 400 ekor di alam liar.</p>
+      <div class="modal fade" id="modalKomodo" tabindex="-1" aria-labelledby="modalKomodoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalKomodoLabel">Komodo</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Pulau Komodo, Nusa Tenggara Timur</p>
+              <p><strong>Deskripsi:</strong> Reptil terbesar di dunia, dikenal sebagai kadal purba. Bisa tumbuh hingga 3
+                meter dan memiliki gigitan beracun.</p>
+              <p><strong>Fun Fact:</strong> Komodo adalah satu-satunya spesies kadal besar yang masih hidup dari zaman
+                dinosaurus!</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FAUNA 3: Burung Cendrawasih -->
-  <div class="modal fade" id="modalCendrawasih" tabindex="-1" aria-labelledby="modalCendrawasihLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalCendrawasihLabel">Burung Cendrawasih</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Papua</p>
-        <p><strong>Deskripsi:</strong> Burung eksotis dengan bulu mencolok yang indah. Disebut juga “Bird of Paradise”.</p>
-        <p><strong>Fun Fact:</strong> Dalam tarian Papua, bulu Cendrawasih dipakai di hiasan kepala.</p>
+      <div class="modal fade" id="modalHarimau" tabindex="-1" aria-labelledby="modalHarimauLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalHarimauLabel">Harimau Sumatera</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Sumatera</p>
+              <p><strong>Deskripsi:</strong> Subspesies harimau terakhir di Indonesia. Tubuhnya lebih kecil dan
+                berloreng lebat dibandingkan harimau lain.</p>
+              <p><strong>Fun Fact:</strong> Kini hanya tersisa kurang dari 400 ekor di alam liar.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FAUNA 4: Anoa -->
-  <div class="modal fade" id="modalAnoa" tabindex="-1" aria-labelledby="modalAnoaLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalAnoaLabel">Anoa</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Sulawesi</p>
-        <p><strong>Deskripsi:</strong> Kerbau kerdil endemik Sulawesi yang hidup di hutan tropis dan sulit ditemukan.</p>
-        <p><strong>Fun Fact:</strong> Dijuluki “kerbau hutan” dan sangat pemalu!</p>
+      <div class="modal fade" id="modalCendrawasih" tabindex="-1" aria-labelledby="modalCendrawasihLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalCendrawasihLabel">Burung Cendrawasih</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Papua</p>
+              <p><strong>Deskripsi:</strong> Burung eksotis dengan bulu mencolok yang indah. Disebut juga “Bird of
+                Paradise”.</p>
+              <p><strong>Fun Fact:</strong> Dalam tarian Papua, bulu Cendrawasih dipakai di hiasan kepala.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FAUNA 5: Jalak Bali -->
-  <div class="modal fade" id="modalJalak" tabindex="-1" aria-labelledby="modalJalakLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalJalakLabel">Jalak Bali</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Bali</p>
-        <p><strong>Deskripsi:</strong> Burung putih kecil bermata biru dengan jambul indah, simbol keindahan Pulau Dewata.</p>
-        <p><strong>Fun Fact:</strong> Populasinya sempat hanya tersisa 6 ekor di alam liar.</p>
+      <div class="modal fade" id="modalAnoa" tabindex="-1" aria-labelledby="modalAnoaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalAnoaLabel">Anoa</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Sulawesi</p>
+              <p><strong>Deskripsi:</strong> Kerbau kerdil endemik Sulawesi yang hidup di hutan tropis dan sulit
+                ditemukan.</p>
+              <p><strong>Fun Fact:</strong> Dijuluki “kerbau hutan” dan sangat pemalu!</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FAUNA 6: Orangutan Kalimantan -->
-  <div class="modal fade" id="modalOrangutan" tabindex="-1" aria-labelledby="modalOrangutanLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalOrangutanLabel">Orangutan Kalimantan</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Kalimantan</p>
-        <p><strong>Deskripsi:</strong> Primata besar cerdas dengan lengan panjang dan rambut coklat kemerahan, sangat mirip manusia.</p>
-        <p><strong>Fun Fact:</strong> Dapat menggunakan alat sederhana seperti tongkat untuk mencari makan!</p>
+      <div class="modal fade" id="modalJalak" tabindex="-1" aria-labelledby="modalJalakLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalJalakLabel">Jalak Bali</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Bali</p>
+              <p><strong>Deskripsi:</strong> Burung putih kecil bermata biru dengan jambul indah, simbol keindahan Pulau
+                Dewata.</p>
+              <p><strong>Fun Fact:</strong> Populasinya sempat hanya tersisa 6 ekor di alam liar.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FAUNA 7: Kakatua Raja -->
-  <div class="modal fade" id="modalKakatua" tabindex="-1" aria-labelledby="modalKakatuaLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalKakatuaLabel">Kakatua Raja</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Papua</p>
-        <p><strong>Deskripsi:</strong> Burung besar dengan jambul merah dan bulu hitam pekat. Suaranya nyaring dan berisik.</p>
-        <p><strong>Fun Fact:</strong> Salah satu spesies kakatua terbesar di dunia!</p>
+      <div class="modal fade" id="modalOrangutan" tabindex="-1" aria-labelledby="modalOrangutanLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalOrangutanLabel">Orangutan Kalimantan</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Kalimantan</p>
+              <p><strong>Deskripsi:</strong> Primata besar cerdas dengan lengan panjang dan rambut coklat kemerahan,
+                sangat mirip manusia.</p>
+              <p><strong>Fun Fact:</strong> Dapat menggunakan alat sederhana seperti tongkat untuk mencari makan!</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FAUNA 8: Bekantan -->
-  <div class="modal fade" id="modalBekantan" tabindex="-1" aria-labelledby="modalBekantanLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalBekantanLabel">Bekantan</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Kalimantan Selatan</p>
-        <p><strong>Deskripsi:</strong> Primata berhidung panjang yang hidup di hutan bakau dan rawa. Pandai berenang.</p>
-        <p><strong>Fun Fact:</strong> Dijadikan maskot Provinsi Kalimantan Selatan!</p>
+      <div class="modal fade" id="modalKakatua" tabindex="-1" aria-labelledby="modalKakatuaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalKakatuaLabel">Kakatua Raja</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Papua</p>
+              <p><strong>Deskripsi:</strong> Burung besar dengan jambul merah dan bulu hitam pekat. Suaranya nyaring dan
+                berisik.</p>
+              <p><strong>Fun Fact:</strong> Salah satu spesies kakatua terbesar di dunia!</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-  <!-- FAUNA 9: Elang Jawa -->
-  <div class="modal fade" id="modalElang" tabindex="-1" aria-labelledby="modalElangLabel" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalElangLabel">Elang Jawa</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-      <div class="modal-body">
-        <p><strong>Asal:</strong> Pulau Jawa</p>
-        <p><strong>Deskripsi:</strong> Burung pemangsa yang langka dengan jambul unik. Hidup di hutan pegunungan.</p>
-        <p><strong>Fun Fact:</strong> Diduga menjadi inspirasi lambang negara Garuda Pancasila.</p>
+      <div class="modal fade" id="modalBekantan" tabindex="-1" aria-labelledby="modalBekantanLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalBekantanLabel">Bekantan</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Kalimantan Selatan</p>
+              <p><strong>Deskripsi:</strong> Primata berhidung panjang yang hidup di hutan bakau dan rawa. Pandai
+                berenang.</p>
+              <p><strong>Fun Fact:</strong> Dijadikan maskot Provinsi Kalimantan Selatan!</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div></div>
-  </div>
-
-<div class="text-center mt-4 mb-5">
-  <a href="game.html" class="btn btn-outline-secondary mt-3">Cobain Game Seru!!</a>
-</div>
-</main>
-
-<!-- Footer -->
-<footer class="container-fluid text-center p-3 text-dark" style="background-color: #DEB887;">
-  &copy; 2025 <strong>Warisan Nusantara. All Rights Reserved.</strong>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="modal fade" id="modalElang" tabindex="-1" aria-labelledby="modalElangLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="modalElangLabel">Elang Jawa</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Asal:</strong> Pulau Jawa</p>
+              <p><strong>Deskripsi:</strong> Burung pemangsa yang langka dengan jambul unik. Hidup di hutan pegunungan.
+              </p>
+              <p><strong>Fun Fact:</strong> Diduga menjadi inspirasi lambang negara Garuda Pancasila.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 mb-5">
+        <a href="game.html" class="btn btn-outline-secondary mt-3">Cobain Game Seru!!</a>
+      </div>
+  </main>
+  <footer class="container-fluid text-center p-3 text-dark" style="background-color: #DEB887;">
+    &copy; 2025 <strong>Warisan Nusantara. All Rights Reserved.</strong>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
